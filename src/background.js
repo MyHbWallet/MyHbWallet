@@ -21,8 +21,9 @@ function createWindow () {
     height: 600,
     webPreferences: {
       nodeIntegration: true
-    }
-  })
+    },
+    icon: `${__static}/logo.ico` })
+  
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
